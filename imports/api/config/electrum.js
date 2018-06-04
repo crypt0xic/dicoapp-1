@@ -20,25 +20,25 @@ let electrumServers = { //by default KMD, BTC and LTC supported
             'helicarrier.bauerj.eu'
         ],
     },
-    dICOtoken: {
-        address: '0.0.0.0',
-        port: 00000,
+    EQL: {
+        address: '159.65.91.235',
+        port: 10801,
         proto: 'tcp',
         txfee: 10000,
-        coin: 'dICOtoken',
+        coin: 'EQL',
         altserverList: [
-            'electrum1.cipig.net', //alternative spv - needs to be same port
-            'electrum2.cipig.net'
+            '159.65.91.235', //alternative spv - needs to be same port
+            '167.99.204.42'
         ],
     }
 };
 
 let tokenconfig = { //custom token config
     dICOtoken: {
-        name: 'dICO Token',
-        shortcode: 'dICOT',
-        siteurl: 'https://www.dicotoken.com',
-        supporturl: 'https://helpdesk.dicotoken.com',
+        name: 'Equaliser',
+        shortcode: 'EQL',
+        siteurl: 'https://www.equaliser.org',
+        supporturl: 'https://helpdesk.equaliser.org',
         pricebob: '0x_pubkey_bob',
         netid: 0000,
         seed: '0.0.0.0'
