@@ -138,16 +138,18 @@ Meteor.methods({
             'method': 'passphrase',
             'passphrase': passphrase,
             'gui': 'dICOApp',
-            //'netid': tokenconfig.dICOtoken.netid,
-            //'seednode': tokenconfig.dICOtoken.seed
+            'netid': tokenconfig.dICOtoken.netid
+            // 'seednode': tokenconfig.dICOtoken.seed
         };
 
-        Meteor.sleep(6000);
+        Meteor.sleep(8000);
         try {
             console.log("ISSUING login call");
             const result = HTTP.call('POST', 'http://127.0.0.1:7783', {
                 data: setparams
             });
+
+            console.log("return data: " + result.content)
 
             console.log("login result: " + result);
             var userpass = JSON.parse(result.content).userpass;

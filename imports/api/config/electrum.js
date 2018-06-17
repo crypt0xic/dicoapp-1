@@ -21,14 +21,13 @@ let electrumServers = { //by default KMD, BTC and LTC supported
         ],
     },
     dICOtoken: {
-        address: 'electrum1.eql.com',
-        port: 9681,
+        address: '159.65.91.235',
+        port: 10801,
         proto: 'tcp',
         txfee: 10000,
         coin: 'EQL',
         altserverList: [
-            'electrum2.eql.com', //alternative spv - needs to be same port
-            'electrum1.eql.com'
+            '167.99.204.42'
         ],
     }
 };

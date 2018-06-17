@@ -6,7 +6,7 @@ let tokenconfig = { //custom token config
         supporturl: 'https://helpdesk.dicotoken.com',
         pricebob: '0x_pubkey_bob',
         netid: 0,
-        seed: '0.0.0.0'
+        // seed: '0.0.0.0'
     }
 };
 
